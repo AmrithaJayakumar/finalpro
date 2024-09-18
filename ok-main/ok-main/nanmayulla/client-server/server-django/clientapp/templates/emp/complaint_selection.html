@@ -1,0 +1,287 @@
+{% extends 'emp/base.html' %}
+{% block title %}Page M{{ page_id }}{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1>You selected M{{ page_id }}</h1>
+
+    <!-- Large container box -->
+    <div class="big-box-container p-4">
+        <div class="complaints-box p-4">
+            <!-- Buttons for selecting a complaint arranged in 4 rows with 3 buttons each -->
+            <label class="form-label">Select a Complaint</label>
+            <div class="container">
+                <div class="row mb-2">
+                    <div class="col">
+                        <button class="btn btn-dark-red w-100 d-flex justify-content-between align-items-center complaint-btn" data-complaint="complaint1">
+                            Complaint 1 
+                            <span class="text-success">&#x2192;</span> <!-- Green arrow -->
+                        </button>
+                        <div class="issues-list" id="complaint1" style="display: none;">
+                            <ul class="list-group">
+                                <li class="list-group-item">Issue 1</li>
+                                <li class="list-group-item">Issue 2</li>
+                                <li class="list-group-item">Issue 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-dark-red w-100 d-flex justify-content-between align-items-center complaint-btn" data-complaint="complaint2">
+                            Complaint 2 
+                            <span class="text-success">&#x2192;</span> <!-- Green arrow -->
+                        </button>
+                        <div class="issues-list" id="complaint2" style="display: none;">
+                            <ul class="list-group">
+                                <li class="list-group-item">Issue 1</li>
+                                <li class="list-group-item">Issue 2</li>
+                                <li class="list-group-item">Issue 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-dark-red w-100 d-flex justify-content-between align-items-center complaint-btn" data-complaint="complaint3">
+                            Complaint 3 
+                            <span class="text-success">&#x2192;</span> <!-- Green arrow -->
+                        </button>
+                        <div class="issues-list" id="complaint3" style="display: none;">
+                            <ul class="list-group">
+                                <li class="list-group-item">Issue 1</li>
+                                <li class="list-group-item">Issue 2</li>
+                                <li class="list-group-item">Issue 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col">
+                        <button class="btn btn-dark-red w-100 d-flex justify-content-between align-items-center complaint-btn" data-complaint="complaint4">
+                            Complaint 4 
+                            <span class="text-success">&#x2192;</span> <!-- Green arrow -->
+                        </button>
+                        <div class="issues-list" id="complaint4" style="display: none;">
+                            <ul class="list-group">
+                                <li class="list-group-item">Issue 1</li>
+                                <li class="list-group-item">Issue 2</li>
+                                <li class="list-group-item">Issue 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-dark-red w-100 d-flex justify-content-between align-items-center complaint-btn" data-complaint="complaint5">
+                            Complaint 5 
+                            <span class="text-success">&#x2192;</span> <!-- Green arrow -->
+                        </button>
+                        <div class="issues-list" id="complaint5" style="display: none;">
+                            <ul class="list-group">
+                                <li class="list-group-item">Issue 1</li>
+                                <li class="list-group-item">Issue 2</li>
+                                <li class="list-group-item">Issue 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-dark-red w-100 d-flex justify-content-between align-items-center complaint-btn" data-complaint="complaint6">
+                            Complaint 6 
+                            <span class="text-success">&#x2192;</span> <!-- Green arrow -->
+                        </button>
+                        <div class="issues-list" id="complaint6" style="display: none;">
+                            <ul class="list-group">
+                                <li class="list-group-item">Issue 1</li>
+                                <li class="list-group-item">Issue 2</li>
+                                <li class="list-group-item">Issue 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col">
+                        <button class="btn btn-dark-red w-100 d-flex justify-content-between align-items-center complaint-btn" data-complaint="complaint7">
+                            Complaint 7 
+                            <span class="text-success">&#x2192;</span> <!-- Green arrow -->
+                        </button>
+                        <div class="issues-list" id="complaint7" style="display: none;">
+                            <ul class="list-group">
+                                <li class="list-group-item">Issue 1</li>
+                                <li class="list-group-item">Issue 2</li>
+                                <li class="list-group-item">Issue 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-dark-red w-100 d-flex justify-content-between align-items-center complaint-btn" data-complaint="complaint8">
+                            Complaint 8 
+                            <span class="text-success">&#x2192;</span> <!-- Green arrow -->
+                        </button>
+                        <div class="issues-list" id="complaint8" style="display: none;">
+                            <ul class="list-group">
+                                <li class="list-group-item">Issue 1</li>
+                                <li class="list-group-item">Issue 2</li>
+                                <li class="list-group-item">Issue 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-dark-red w-100 d-flex justify-content-between align-items-center complaint-btn" data-complaint="complaint9">
+                            Complaint 9 
+                            <span class="text-success">&#x2192;</span> <!-- Green arrow -->
+                        </button>
+                        <div class="issues-list" id="complaint9" style="display: none;">
+                            <ul class="list-group">
+                                <li class="list-group-item">Issue 1</li>
+                                <li class="list-group-item">Issue 2</li>
+                                <li class="list-group-item">Issue 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col">
+                        <button class="btn btn-dark-red w-100 d-flex justify-content-between align-items-center complaint-btn" data-complaint="complaint10">
+                            Complaint 10 
+                            <span class="text-success">&#x2192;</span> <!-- Green arrow -->
+                        </button>
+                        <div class="issues-list" id="complaint10" style="display: none;">
+                            <ul class="list-group">
+                                <li class="list-group-item">Issue 1</li>
+                                <li class="list-group-item">Issue 2</li>
+                                <li class="list-group-item">Issue 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-dark-red w-100 d-flex justify-content-between align-items-center complaint-btn" data-complaint="complaint11">
+                            Complaint 11 
+                            <span class="text-success">&#x2192;</span> <!-- Green arrow -->
+                        </button>
+                        <div class="issues-list" id="complaint11" style="display: none;">
+                            <ul class="list-group">
+                                <li class="list-group-item">Issue 1</li>
+                                <li class="list-group-item">Issue 2</li>
+                                <li class="list-group-item">Issue 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-dark-red w-100 d-flex justify-content-between align-items-center complaint-btn" data-complaint="complaint12">
+                            Complaint 12 
+                            <span class="text-success">&#x2192;</span> <!-- Green arrow -->
+                        </button>
+                        <div class="issues-list" id="complaint12" style="display: none;">
+                            <ul class="list-group">
+                                <li class="list-group-item">Issue 1</li>
+                                <li class="list-group-item">Issue 2</li>
+                                <li class="list-group-item">Issue 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back Button below the complaints box -->
+        <div class="mb-4 mt-4">
+            <a href="{% url 'emp:machine_selection' %}" class="btn btn-secondary">Back</a> <!-- Replace 'machine_selection' with your actual URL name -->
+        </div>
+
+        <!-- Modal for confirmation -->
+        <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="confirmationModalLabel">Confirm Selection</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Are you sure you want to proceed with <span id="selectedComplaint"></span>?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary" id="confirmButton">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Bootstrap JS and CSS for modal functionality -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+<style>
+    .btn-dark-red {
+        background-color: darkred;
+        color: white;
+    }
+
+    .big-box-container {
+        border: 2px solid #f0a1a1; /* Light pink border for cuteness */
+        border-radius: 15px;
+        padding: 20px;
+        background-color: #fff8f8; /* Very light pink background */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        margin: 20px auto;
+        max-width: 80%;
+    }
+
+    .complaints-box {
+        border: 1px solid darkred;
+        border-radius: 10px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .issues-list {
+        margin-top: 10px;
+    }
+
+    .list-group-item {
+        cursor: pointer;
+    }
+
+    .list-group-item:hover {
+        background-color: lightgray;
+    }
+</style>
+
+<script>
+    // Toggle issue list visibility on button click
+    document.querySelectorAll('.complaint-btn').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var complaintId = this.getAttribute('data-complaint');
+            var issueList = document.getElementById(complaintId);
+
+            // Toggle the display of the issue list
+            if (issueList.style.display === 'none') {
+                issueList.style.display = 'block';
+            } else {
+                issueList.style.display = 'none';
+            }
+        });
+    });
+
+    document.querySelectorAll('.list-group-item').forEach(function(item) {
+        item.addEventListener('click', function() {
+            var selectedIssue = this.textContent.trim();
+            document.getElementById('selectedComplaint').textContent = selectedIssue;
+
+            var confirmationModal = new bootstrap.Modal(document.getElementById('confirmationModal'));
+            confirmationModal.show();
+        });
+    });
+
+    document.getElementById('confirmButton').addEventListener('click', function() {
+        // Make an AJAX request to the logout view
+        fetch('{% url "emp:logout_and_redirect" %}', {
+            method: 'GET',
+            credentials: 'same-origin' // Ensures cookies (like session cookies) are included in the request
+        }).then(response => {
+            // Redirect after logout
+            window.location.href = '{% url "emp:employee_selection" %}'; // Replace 'employee_selection' with your actual URL name
+        }).catch(error => {
+            console.error('Error logging out:', error);
+        });
+    });
+</script>
+{% endblock %}
